@@ -1,6 +1,6 @@
 # SNBT
 
-Support SNBT(Stringified Named Binary Tag) format of Minecraft
+Support SNBT(Stringified Named Binary Tag) format of Minecraft.
 
 ## Features
 
