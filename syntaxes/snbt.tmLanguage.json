@@ -53,11 +53,11 @@
 		},
 		"short": {
 			"name": "constant.numeric",
-			"match": "[0-9]+[Bb]"
+			"match": "[0-9]+[Ss]"
 		},
 		"int": {
 			"name": "constant.numeric",
-			"match": "[0-9]+[Ss]"
+			"match": "[0-9]+"
 		},
 		"long": {
 			"name": "constant.numeric",
