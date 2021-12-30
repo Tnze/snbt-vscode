@@ -1,0 +1,25 @@
+{
+    "name": "snbt",
+    "displayName": "snbt",
+    "description": "Support SNBT(Stringified Named Binary Tag) format of Minecraft",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.63.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "snbt",
+            "aliases": ["S-NBT", "snbt"],
+            "extensions": [".snbt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "snbt",
+            "scopeName": "source.snbt",
+            "path": "./syntaxes/snbt.tmLanguage.json"
+        }]
+    }
+}
