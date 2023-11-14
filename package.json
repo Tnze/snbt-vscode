@@ -2,7 +2,7 @@
     "name": "snbt",
     "displayName": "snbt",
     "description": "Support SNBT(Stringified Named Binary Tag) format of Minecraft",
-    "version": "0.0.4",
+    "version": "0.1.0",
     "repository": "https://github.com/Tnze/snbt-vscode.git",
     "publisher": "Tnze",
     "engines": {
@@ -11,17 +11,44 @@
     "categories": [
         "Programming Languages"
     ],
+    "main": "./out/extension.js",
     "contributes": {
-        "languages": [{
-            "id": "snbt",
-            "aliases": ["S-NBT", "snbt"],
-            "extensions": [".snbt"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "snbt",
-            "scopeName": "source.snbt",
-            "path": "./syntaxes/snbt.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "snbt",
+                "aliases": [
+                    "S-NBT",
+                    "snbt"
+                ],
+                "extensions": [
+                    ".snbt"
+                ],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "snbt",
+                "scopeName": "source.snbt",
+                "path": "./syntaxes/snbt.tmLanguage.json"
+            }
+        ]
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint \"src/**/*.ts\"",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^20.9.0",
+        "@types/vscode": "^1.84.1",
+        "@typescript-eslint/eslint-plugin": "^6.11.0",
+        "@typescript-eslint/parser": "^6.11.0",
+        "eslint": "^8.53.0",
+        "typescript": "^5.2.2"
+    },
+    "dependencies": {
+        "@ironm00n/nbt-ts": "^1.4.0"
     }
 }

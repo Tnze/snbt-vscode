@@ -5,6 +5,7 @@ Support SNBT(Stringified Named Binary Tag) format of Minecraft.
 ## Features
 
 * Hightlight
+* Formatting (Just for fun, calling a library to converting to NBT and back)
 
 ![Hightlight](images/hightlight.png)
 
