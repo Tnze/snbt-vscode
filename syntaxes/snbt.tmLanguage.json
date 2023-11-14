@@ -46,27 +46,27 @@
         },
         "byte": {
             "name": "constant.numeric",
-            "match": "[0-9]+[Bb]"
+            "match": "-?[0-9]+[Bb]"
         },
         "short": {
             "name": "constant.numeric",
-            "match": "[0-9]+[Ss]"
+            "match": "-?[0-9]+[Ss]"
         },
         "int": {
             "name": "constant.numeric",
-            "match": "[0-9]+"
+            "match": "-?[0-9]+"
         },
         "long": {
             "name": "constant.numeric",
-            "match": "[0-9]+[Ll]"
+            "match": "-?[0-9]+[Ll]"
         },
         "float": {
             "name": "constant.numeric",
-            "match": "[0-9]\\.[0-9]+[Ff]"
+            "match": "-?[0-9]\\.[0-9]+[Ff]"
         },
         "double": {
             "name": "constant.numeric",
-            "match": "[0-9]\\.[0-9]+[Dd]"
+            "match": "-?[0-9]\\.[0-9]+[Dd]"
         },
         "bytearray": {
             "begin": "\\[B;",

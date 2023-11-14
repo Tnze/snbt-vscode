@@ -2,7 +2,7 @@
     "name": "snbt",
     "displayName": "snbt",
     "description": "Support SNBT(Stringified Named Binary Tag) format of Minecraft",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "repository": "https://github.com/Tnze/snbt-vscode.git",
     "publisher": "Tnze",
     "engines": {
